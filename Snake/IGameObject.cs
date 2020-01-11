@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Snake.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,7 @@ namespace Snake
 {
     public interface IGameObject
     {
-        Position Position { get; set; }
-        GameDisplay Display { get; set; }
         bool CollideWith(IGameObject otherGameObject);
+        void Draw();
     }
 }

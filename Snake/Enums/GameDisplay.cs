@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Snake
+namespace Snake.Enums
 {
     public enum GameDisplay
     {

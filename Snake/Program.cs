@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Snake.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Collections;
 using System.Threading;
 
 namespace Snake

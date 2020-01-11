@@ -41,14 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Direction.cs" />
+    <Compile Include="CompositeGameObject.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Entities\Obstacle.cs" />
+    <Compile Include="Entities\SnakeBody.cs" />
+    <Compile Include="Entities\SnakeHead.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Enums\GameItems.cs" />
     <Compile Include="Extentions\EnumExtentions.cs" />
-    <Compile Include="GameDisplay.cs" />
+    <Compile Include="Factories\FoodFactory.cs" />
+    <Compile Include="Factories\GameObjectFactory.cs" />
+    <Compile Include="Factories\GameObjectFactoryProvider.cs" />
+    <Compile Include="Factories\ObstacleFactory.cs" />
+    <Compile Include="Factories\SnakeFactory.cs" />
+    <Compile Include="Enums\GameDisplay.cs" />
+    <Compile Include="Entities\Food.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="IGameObject.cs" />
+    <Compile Include="Entities\ObstacleSet.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Snake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Snake
+namespace Snake.Factories
 {
-    public enum Direction
+    class GameObjectFactoryProvider
     {
-       Right,
-       Left,
-       Down,
-       Up
     }
 }
