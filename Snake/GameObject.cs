@@ -10,6 +10,10 @@ namespace Snake
 {
     public class GameObject : IGameObject
     {
+        public GameObject()
+        {
+        }
+
         public GameObject(Position position)
         {
             this.Position = position;
@@ -23,7 +27,8 @@ namespace Snake
 
         public bool CollideWith(IGameObject otherGameObject)
         {
-            return  this.Position.Equals(otherGameObject);
+            return this.Position.x == ((GameObject)otherGameObject).Position.x
+                && this.Position.y == ((GameObject)otherGameObject).Position.y;
         }
 
         public void Draw()
@@ -34,7 +39,22 @@ namespace Snake
             }
 
             Console.SetCursorPosition(this.Position.y, this.Position.x);
-            Console.Write(this.Display);
+            Console.Write(this.Display.GetDescription());
+        }
+
+        public Position CreateRandomPosition()
+        {
+            Random randomNumbersGenerator = new Random();
+
+            var x = randomNumbersGenerator.Next(0, Console.WindowHeight);
+            var y = randomNumbersGenerator.Next(0, Console.WindowWidth);
+
+            return new Position(x, y);
+        }
+
+        public virtual void Init()
+        {
+            this.Display = GameDisplay.Empty;
         }
     }
 }

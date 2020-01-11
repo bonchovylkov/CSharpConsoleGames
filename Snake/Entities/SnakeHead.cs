@@ -23,6 +23,8 @@ namespace Snake.Entities
             if (direction == Direction.Left) headSymbol = GameDisplay.SnakeHeadLeft;
             if (direction == Direction.Up) headSymbol = GameDisplay.SnakeHeadUp;
             if (direction == Direction.Down) headSymbol = GameDisplay.SnakeHeadDown;
+
+            this.Display = headSymbol;
         }
     }
 }

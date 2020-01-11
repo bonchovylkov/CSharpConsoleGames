@@ -9,10 +9,20 @@ namespace Snake.Entities
 {
     public class Obstacle : GameObject
     {
+        public Obstacle()
+        {
+            this.Init();
+        }
+
         public Obstacle(Position position) 
             : base(position)
         {
-            this.Color = ConsoleColor.Cyan;
+            this.Init();
+        }
+
+        public override void Init()
+        {
+            this.Color = ConsoleColor.Yellow;
             this.Display = GameDisplay.Obstacle;
         }
     }

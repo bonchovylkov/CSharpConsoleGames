@@ -43,16 +43,18 @@
   <ItemGroup>
     <Compile Include="CompositeGameObject.cs" />
     <Compile Include="Engine\Game.cs" />
+    <Compile Include="Entities\EmptyObject.cs" />
     <Compile Include="Entities\Obstacle.cs" />
     <Compile Include="Entities\SnakeBody.cs" />
     <Compile Include="Entities\SnakeHead.cs" />
     <Compile Include="Enums\Direction.cs" />
     <Compile Include="Enums\GameItems.cs" />
     <Compile Include="Extentions\EnumExtentions.cs" />
+    <Compile Include="Factories\ObstacleFactory.cs" />
     <Compile Include="Factories\FoodFactory.cs" />
     <Compile Include="Factories\GameObjectFactory.cs" />
     <Compile Include="Factories\GameObjectFactoryProvider.cs" />
-    <Compile Include="Factories\ObstacleFactory.cs" />
+    <Compile Include="Factories\ObstacleSetFactory.cs" />
     <Compile Include="Factories\SnakeFactory.cs" />
     <Compile Include="Enums\GameDisplay.cs" />
     <Compile Include="Entities\Food.cs" />

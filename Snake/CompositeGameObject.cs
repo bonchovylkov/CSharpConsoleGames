@@ -15,7 +15,7 @@ namespace Snake
             return Items.Any(i => otherGameObject.CollideWith(i));
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
             foreach (GameObject item in Items)
             {

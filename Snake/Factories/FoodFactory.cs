@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Snake.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,11 @@ namespace Snake.Factories
 {
     public class FoodFactory : GameObjectFactory
     {
-        public override IGameObject Create()
+        public override IGameObject Create(params IGameObject[] collideObject)
         {
-            throw new NotImplementedException();
+            Food food = new Food();
+            SetRandomPositionedItem(food, collideObject);
+            return food;
         }
     }
 }

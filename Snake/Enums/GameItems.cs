@@ -10,6 +10,8 @@ namespace Snake.Enums
     {
         Snake,
         Food,
-        Obstacle
+        ObstacleSet,
+        Obstacle,
+        EmptySpace
     }
 }

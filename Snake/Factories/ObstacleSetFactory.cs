@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace Snake.Factories
 {
-    public class ObstacleFactory : GameObjectFactory
+    public class ObstacleSetFactory : GameObjectFactory
     {
         public override IGameObject Create(params IGameObject[] collideObject)
         {
-            Obstacle food = new Obstacle();
-            SetRandomPositionedItem(food, collideObject);
-            return food;
+            return new ObstacleSet();
         }
     }
 }

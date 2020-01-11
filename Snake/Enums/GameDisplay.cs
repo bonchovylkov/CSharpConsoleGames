@@ -18,5 +18,7 @@ namespace Snake.Enums
         Food,
         [Description("=")]
         Obstacle,
+        [Description(" ")]
+        Empty,
     }
 }

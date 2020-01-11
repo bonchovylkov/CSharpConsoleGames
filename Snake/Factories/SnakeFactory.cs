@@ -8,9 +8,9 @@ namespace Snake.Factories
 {
     public class SnakeFactory : GameObjectFactory
     {
-        public override IGameObject Create()
+        public override IGameObject Create(params IGameObject[] collideObject)
         {
-            throw new NotImplementedException();
+            return new Snake.Entities.Snake();
         }
     }
 }
